@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website desgine- tutorials </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="BLOG.HTML">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+       <h1>CONTACT US </h1>
+       </section>
+
+       <!-- -------CONTACT US------- -->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d43115.47461019554!2d76.1692053453392!3d29.208032026869578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1749550186847!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                     <div>
+                         <i class="fa fa-home" ></i>
+                         <span>
+                            <h5>XYZ road, abc building</h5>
+                            <p>Narnaund, Hisar , Haryana</p>
+                         </span>
+                        
+                     </div>
+                      <div>
+                         <i class="fa fa-phone" ></i>
+                         <span>
+                             <h5>9876543210</h5>
+                             <p>Monda to Saturday , 9AM TO 6PM</p>
+
+                         </span>
+                     </div>
+                      <div>
+                         <i class="fa fa-envelope" ></i>
+                         <span>
+                             <h5>priyanka2@gmail.com</h5>
+                             <p>Email us your query</p>
+                         </span>
+                     </div>
+                </div>
+
+
+
+                 <div class="contact-col">
+                    <form action="formhandler.php" method="post">
+                        <p>NAME:-</p>
+                        <input type="text" name="name" placeholder="enter your name " required>
+                        <p>EMAIL:-</p>
+                        <input type="Email" name="email" placeholder="enter your email address " required>
+                        <p>SUBJECT:-</p>
+                        <input type="" name="subject" placeholder="enter your subject " required>
+                        <p>Write a message:-</p>
+                        
+                        <textarea name="" id="" rows="8"  name="message" placeholder="Message......"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+        <!--footer  -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi et dolores <br> placeat ratione temporibus aliquam quas, nisi </p>
+            <div class="icons">
+                <i class="fa fa-facebook" ></i>
+                <i class="fa fa-instagram" ></i>
+                <i class="fa fa-telegram" ></i>
+                <i class="fa fa-twitter" ></i>
+                <i class="fa fa-linkedin" ></i>
+            </div>
+
+            <p>Made with <i class="fa fa-heart-o" > by Easy tutorials</i></p>
+        </section>
+
+
+
+
+
+
+
+    <!-- javascript for toggle menu -->
+    <script>
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+        
+    }
+
+
+    </script>
+</body>
+</html>
